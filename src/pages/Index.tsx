@@ -8,6 +8,7 @@ import { SavingsSection } from "@/components/sections/SavingsSection";
 import { ControlsSection } from "@/components/sections/ControlsSection";
 import { PeaksSection } from "@/components/sections/PeaksSection";
 import { AnomaliesSection } from "@/components/sections/AnomaliesSection";
+import { DevicesSection } from "@/components/sections/DevicesSection";
 import { PortfolioSection } from "@/components/sections/PortfolioSection";
 import { ReportsSection } from "@/components/sections/ReportsSection";
 import { CoachSection } from "@/components/sections/CoachSection";
@@ -80,6 +81,8 @@ const Index = () => {
         return <PeaksSection data={siteData} onToast={showToast} />;
       case 'anomalies':
         return <AnomaliesSection data={siteData} />;
+      case 'devices':
+        return <DevicesSection onToast={showToast} />;
       case 'portfolio':
         return <PortfolioSection currentSite={selectedSite} />;
       case 'reports':
